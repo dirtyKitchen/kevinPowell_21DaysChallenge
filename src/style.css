@@ -5,6 +5,9 @@
 /* https://piccalil.li/blog/a-modern-css-reset/ */
 
 /* Box sizing */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;&display=swap');
+
 *,
 *::before,
 *::after {
@@ -24,10 +27,14 @@ picture {
     margin: 0;
 }
 
+a{
+    text-decoration: none;
+}
 /* Setting up the Body */
 body {
     line-height: 1.5;
     min-height: 100vh;
+    background-color: black;
 }
 
 /* Setting up the Images */
@@ -90,4 +97,41 @@ select {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
+}
+
+.content {
+    padding: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content>img {
+    width: 50%;
+}
+
+.days {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+}
+
+
+.challenge {
+    background-color: rgb(238, 238, 238, 0.2);
+    border-radius: 5px;
+    padding: 1em;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.2ch;
+    font-weight: 400;
+}
+
+
+.challenges1 {
+    background-color: #01ff06;
 }
